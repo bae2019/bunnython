@@ -5,16 +5,19 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_fast_matching4.*
+import kotlinx.android.synthetic.main.activity_fast_matching4.next_btn
+import kotlinx.android.synthetic.main.activity_fast_matching45.*
 import kotlinx.android.synthetic.main.bottombar.*
 import kotlinx.android.synthetic.main.toolbar1.*
 
-class fast_matching4_5 : AppCompatActivity() {
+class fast_matching4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fast_matching4)
 
         var start = ""
         var end = ""
+        var comment = ""
         if (intent.hasExtra("start")) {  //이전 액티비티에서 start end값 가져오기
             start = intent.getStringExtra("start").toString()
         } else {
@@ -25,18 +28,17 @@ class fast_matching4_5 : AppCompatActivity() {
         } else {
             Toast.makeText(this, "Error!", Toast.LENGTH_SHORT).show()
         }
-        /*
-        var intent = Intent(this, fast_matching4::class.java)
-            intent.putExtra("start", start)
-            intent.putExtra("end", end)
-            startActivity(intent)
-            finish()
-         */
+        if (intent.hasExtra("com")) {
+            comment = intent.getStringExtra("comment").toString()
+        } else {
+            Toast.makeText(this, "Error!", Toast.LENGTH_SHORT).show()
+        }
 
-        next_btn1.setOnClickListener {  //다음 액티비티로 전환, start end값 넘기기
-            var comment = edit_next.text.toString()
-            var intent = Intent(this, fast_matching4_5::class.java)
-            intent.putExtra("com", comment)
+        thistext.setText(comment)
+
+
+        next_btn.setOnClickListener {  //다음 액티비티로 전환, start end값 넘기기
+            var intent = Intent(this, fast_matching5::class.java)
             intent.putExtra("start", start)
             intent.putExtra("end", end)
             startActivity(intent)

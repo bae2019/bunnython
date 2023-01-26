@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.CalendarView
 import android.widget.TextView
 import kotlinx.android.synthetic.main.bottombar.*
+import kotlinx.android.synthetic.main.toolbar2.*
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.*
@@ -33,6 +34,14 @@ class rsv_matching1 : AppCompatActivity() {
 
         homebtn.setOnClickListener {
             startActivity(Intent(this, MainActivity2::class.java))
+            finish()
+        }
+        backbtn.setOnClickListener {
+            startActivity(Intent(this, MainActivity2::class.java))
+            finish()
+        }
+        sysicon.setOnClickListener {
+            startActivity(Intent(this, setting::class.java))
             finish()
         }
     }
