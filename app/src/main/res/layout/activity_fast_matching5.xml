@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fast_matching5">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar1"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-23dp" />
+
+    <RelativeLayout
+        android:id="@+id/end_point_shortcut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="0dp"
+            android:gravity="center"
+            android:background="#C8C6C6"
+            android:textColor="#FFFFFF"
+            android:text="출발지"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/remind1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="100dp"
+            android:gravity="center"
+            android:text="."
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginStart="0dp"
+            android:gravity="center"
+            android:background="#C8C6C6"
+            android:textColor="#FFFFFF"
+            android:text="목적지"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/remind2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginStart="100dp"
+            android:gravity="center"
+            android:text="."
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="0dp"
+            android:gravity="center"
+            android:background="#C8C6C6"
+            android:textColor="#FFFFFF"
+            android:text="계산인"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/remind3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="100dp"
+            android:gravity="center"
+            android:text="한바니"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/choice4"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginStart="0dp"
+            android:gravity="center"
+            android:background="#C8C6C6"
+            android:textColor="#FFFFFF"
+            android:text="예상금액"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/remind4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:layout_marginStart="100dp"
+            android:gravity="center"
+            android:text="7000 원"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/choice5"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginStart="0dp"
+            android:gravity="center"
+            android:background="#C8C6C6"
+            android:textColor="#FFFFFF"
+            android:text="개인금액"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/remind5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:layout_marginStart="100dp"
+            android:gravity="center"
+            android:text="3400 원"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/choice6"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginStart="0dp"
+            android:gravity="center"
+            android:background="#C8C6C6"
+            android:textColor="#FFFFFF"
+            android:text="출발일시"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/remind6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="330dp"
+            android:layout_marginStart="100dp"
+            android:gravity="center"
+            android:text="10분 후"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginEnd="85dp"
+            android:gravity="center"
+            android:text="합의된 내용이 맞습니까?"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="550dp"
+            android:backgroundTint="#C8C6C6"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:text="예"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/no"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="100dp"
+            android:layout_marginTop="550dp"
+            android:backgroundTint="#C8C6C6"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:text="아니오"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/bottombar" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

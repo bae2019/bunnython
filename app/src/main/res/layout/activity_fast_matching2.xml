@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fast_matching2">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar1"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-23dp" />
+
+    <LinearLayout
+        android:id="@+id/start_point"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="#C8C6C6"
+            android:gravity="center"
+            android:text="출 발 지 점"
+            android:textColor="#546E7A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/edit_start_point2"
+            android:layout_width="287dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:text="출발지"
+            app:layout_constraintStart_toStartOf="@+id/include2"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/end_point"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="#C8C6C6"
+            android:gravity="center"
+            android:text="도 착 지 점"
+            android:textColor="#546E7A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/edit_end_point2"
+            android:layout_width="287dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:text="목적지"
+            app:layout_constraintStart_toStartOf="@+id/include2"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/end_point_shortcut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="반 경"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/choice_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp" />
+
+        <TextView
+            android:id="@+id/choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="최 대  동 승 인 원"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/choice_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="30dp" />
+
+        <TextView
+            android:id="@+id/choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="연 령"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/choice_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="30dp" />
+
+        <TextView
+            android:id="@+id/choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="계 산 방 식"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/choice_btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="210dp"
+            android:layout_marginEnd="30dp" />
+
+        <TextView
+            android:id="@+id/choice5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="상 의 여 부"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/choice_btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="270dp"
+            android:layout_marginEnd="30dp" />
+
+        <Button
+            android:id="@+id/choice_btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="128dp"
+            android:backgroundTint="#C8C6C6"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="선 택 완 료"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/bottombar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
