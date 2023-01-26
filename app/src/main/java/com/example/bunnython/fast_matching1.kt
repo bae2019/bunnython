@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_fast_matching1.*
 import kotlinx.android.synthetic.main.bottombar.*
+import kotlinx.android.synthetic.main.toolbar1.*
 
 class fast_matching1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +23,14 @@ class fast_matching1 : AppCompatActivity() {
 
         homebtn.setOnClickListener {
             startActivity(Intent(this, MainActivity2::class.java))
+            finish()
+        }
+        backbtn.setOnClickListener {
+            startActivity(Intent(this, MainActivity2::class.java))
+            finish()
+        }
+        sysicon.setOnClickListener {
+            startActivity(Intent(this, setting::class.java))
             finish()
         }
     }
